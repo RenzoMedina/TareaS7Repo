@@ -1,0 +1,17 @@
+//buttons
+@mixin btn($color, $bg,$size){
+    border: 1px solid $bg;
+    color: $color;
+    border-radius:8px;
+    width: auto;
+    font-family: $text-font;
+    font-weight: 700;
+    font-size: $size;
+    background: $bg;
+    padding: 5px;
+    box-shadow: 1px 1px 1px $shadwon-md;
+    &:hover{
+        cursor: pointer;
+    }
+}
+

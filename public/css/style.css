@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Mulish", sans-serif;
+}
+
+.header {
+  background: rgb(241, 241, 241);
+  width: 100vw;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.377);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  flex: 1;
+}
+
+.footer {
+  border-top: 2px solid rgba(0, 0, 0, 0.568);
+  background: rgb(241, 241, 241);
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+.aside {
+  background: rgb(2, 2, 104);
+  width: 220px;
+  order: -1;
+  color: white;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.aside-main .aside-logo {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding: 20px 0;
+}
+.aside-main .aside-logo a {
+  text-decoration: none;
+  color: inherit;
+}
+.aside-main .aside-main-menu {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+.aside-main-menu .aside-btn {
+  float: right;
+  margin-right: 10px;
+  margin-top: -10px;
+  background: none;
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 5px;
+  color: inherit;
+  padding: 1px;
+}
+.aside-main-menu .aside-btn:hover {
+  cursor: pointer;
+}
+.aside-main-menu .aside-menu {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.aside-main .aside-menu-li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.aside-main .aside-menu-item {
+  list-style: none;
+  margin-top: 20px;
+}
+.aside-main .aside-menu-item li {
+  padding-left: 25px;
+  margin-top: 13px;
+}
+.aside-main .aside-menu-item li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aside-menu-item li a:hover {
+  color: #b6b6b6;
+}
+
+.menu-item {
+  display: none;
+  transition: all 0.4s;
+}
+
+.section {
+  padding: 20px;
+  margin: 20px 10px;
+  width: 85%;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  border-radius: 8px;
+}
+
+.title-section {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-bottom: 4px solid rgb(7, 123, 201);
+  margin-bottom: 10px;
+}
+.title-section .btn-section {
+  border: 1px solid rgb(236, 236, 40);
+  color: #000;
+  border-radius: 8px;
+  width: auto;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background: rgb(236, 236, 40);
+  padding: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+  float: right;
+}
+.title-section .btn-section:hover {
+  cursor: pointer;
+}
+.title-section .btn-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  padding: 10px;
+}
+.content .table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+.content button:not(.btn-destroy) {
+  border: 1px solid rgb(18, 126, 18);
+  color: white;
+  border-radius: 8px;
+  width: auto;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background: rgb(18, 126, 18);
+  padding: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+  float: right;
+  margin-bottom: 15px;
+}
+.content button:not(.btn-destroy):hover {
+  cursor: pointer;
+}
+.content .btn-destroy {
+  background: none;
+  border: none;
+}
+.content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.table th:not(:last-child), .table td:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.377);
+}
+.table th, .table tr:not(:last-child) > td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+}
+.table .thead {
+  background: rgb(241, 241, 241);
+}
+
+.form-asitencia {
+  padding: 10px;
+}
+.form-asitencia .form-group-asistencia {
+  display: flex;
+  flex-direction: column;
+}
+.form-asitencia label, .form-asitencia p {
+  font-size: 18px;
+}
+.form-asitencia input[type=text], .form-asitencia select, .form-asitencia input[type=time], .form-asitencia input[type=password] {
+  border: 1px solid rgba(0, 0, 0, 0.568);
+  border-radius: 8px;
+  height: 30px;
+  padding: 2px 0 2px 8px;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  margin: 5px 0;
+}
+.form-asitencia input[type=text], .form-asitencia input[type=time] {
+  outline: none;
+}
+.form-asitencia select {
+  text-transform: capitalize;
+  background: none;
+}
+.form-asitencia input[type=text] {
+  text-transform: capitalize;
+}
+.form-asitencia .time-clases {
+  display: flex;
+  justify-content: space-between;
+}
+.form-asitencia button {
+  border: 1px solid rgb(18, 126, 18);
+  color: white;
+  border-radius: 8px;
+  width: auto;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background: rgb(18, 126, 18);
+  padding: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+  width: 15%;
+  margin-top: 8px;
+}
+.form-asitencia button:hover {
+  cursor: pointer;
+}
+.form-asitencia :nth-of-type(8) {
+  align-items: end;
+}
+.form-asitencia hr {
+  background: rgba(0, 0, 0, 0.377);
+  margin: 2px 0;
+}
+.form-asitencia input:invalid {
+  background: rgb(241, 241, 241);
+  border: 3px solid rgb(221, 21, 21);
+}
+
+.time-clases input[type=time] {
+  padding-right: 8px;
+  margin-left: 30px;
+}
+
+.validacion-asistencia p {
+  margin: 3px 0 5px 0;
+}
+.validacion-asistencia input[type=radio] {
+  margin-right: 5px;
+}
+
+.form-group-asistencia:nth-of-type(1) input {
+  width: 20%;
+  text-align: center;
+  background: rgb(241, 241, 241);
+}
+
+.readonly {
+  background: rgb(241, 241, 241);
+}
+
+.estado {
+  display: flex;
+  justify-content: center;
+  margin-right: 3px;
+}
+.estado a span {
+  color: rgb(7, 123, 201);
+}
+.estado form span {
+  color: rgb(221, 21, 21);
+}
+.estado form span:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
